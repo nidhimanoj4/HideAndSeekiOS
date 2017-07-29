@@ -14,6 +14,7 @@
 		03C36F131F2D2E8A00610A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F111F2D2E8A00610A7D /* LaunchScreen.storyboard */; };
 		03C36F1E1F2D2E8A00610A7D /* Hide_And_SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F1D1F2D2E8A00610A7D /* Hide_And_SeekTests.swift */; };
 		03C36F291F2D2E8A00610A7D /* Hide_And_SeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */; };
+		1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */; };
 		2502BCA9CF59D3D2C291D4E4 /* Pods_Hide_And_SeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */; };
 		34878E7140C53CBAF7A7A4A1 /* Pods_Hide_And_Seek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */; };
 		89E40DCF45C34DD30FD4E555 /* Pods_Hide_And_SeekUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AF10BD53C2888697657D2C /* Pods_Hide_And_SeekUITests.framework */; };
@@ -51,6 +52,7 @@
 		03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hide_And_SeekUITests.swift; sourceTree = "<group>"; };
 		03C36F2A1F2D2E8A00610A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B5ABD42AC851D82BD98466A /* Pods-Hide-And-SeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekTests/Pods-Hide-And-SeekTests.release.xcconfig"; sourceTree = "<group>"; };
+		1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C16EFC1BBDFA43F758A849 /* Pods-Hide-And-SeekUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekUITests/Pods-Hide-And-SeekUITests.release.xcconfig"; sourceTree = "<group>"; };
 		74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_SeekTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +116,7 @@
 		03C36F071F2D2E8A00610A7D /* Hide-And-Seek */ = {
 			isa = PBXGroup;
 			children = (
+				1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */,
 				03C36F081F2D2E8A00610A7D /* AppDelegate.swift */,
 				03C36F0A1F2D2E8A00610A7D /* ViewController.swift */,
 				03C36F0C1F2D2E8A00610A7D /* Main.storyboard */,
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C36F131F2D2E8A00610A7D /* LaunchScreen.storyboard in Resources */,
+				1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */,
 				03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */,
 				03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */,
 			);

@@ -16,5 +16,13 @@ target 'Hide-And-Seek' do
     inherit! :search_paths
     # Pods for testing
   end
+
+  #Pods for Firebase
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+
+  # Pods for Facebook
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
 end
