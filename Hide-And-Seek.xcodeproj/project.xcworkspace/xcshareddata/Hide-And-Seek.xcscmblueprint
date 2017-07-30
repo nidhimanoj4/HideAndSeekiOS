@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B93F947D262C90A778D48064D9D4D5BD3B79647",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8B93F947D262C90A778D48064D9D4D5BD3B79647" : 0,
+    "10A1C74FCD8207C97E39B04594CA4F897A578BE2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6783E3C4-71FC-404C-90FA-69E7A078522C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8B93F947D262C90A778D48064D9D4D5BD3B79647" : "Hide-And-Seek\/",
+    "10A1C74FCD8207C97E39B04594CA4F897A578BE2" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hide-And-Seek",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hide-And-Seek.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/carolineh101\/HideAndSeek.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10A1C74FCD8207C97E39B04594CA4F897A578BE2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nidhimanoj4\/HideAndSeekiOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B93F947D262C90A778D48064D9D4D5BD3B79647"
+    }
+  ]
+}
