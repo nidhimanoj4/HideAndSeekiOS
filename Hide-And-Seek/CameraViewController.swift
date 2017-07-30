@@ -12,23 +12,37 @@ import AVFoundation
 
 class CameraViewController: UIViewController {
     //save photo to user's photos
-
     @IBOutlet weak var cameraView: UIView!
+    @IBOutlet weak var takePictureButton: UIButton!
+    @IBOutlet weak var flashButton: UIButton!
+    @IBOutlet weak var flipCameraButton: UIButton!
+    @IBOutlet var viewOfScreen: UIView!
     let captureSession = AVCaptureSession()
     var captureDevice: AVCaptureDevice?
     var previewLayer: AVCaptureVideoPreviewLayer?
     var frontCamera: Bool = false
     var stillImageOutput: AVCaptureStillImageOutput = AVCaptureStillImageOutput()
     
-
     @IBAction func flipCameraButtonClicked(_ sender: UIButton) {
-        
+        // Switch camera to frontal
+        frontCamera = !frontCamera
+        captureSession.beginConfiguration()
+        let inputs = captureSession.inputs as! [AVCaptureInput]
+        for oldInput: AVCaptureInput in inputs {
+            captureSession.removeInput(oldInput)
+        }
+        frontCameraFunc(frontCamera)
+        captureSession.commitConfiguration()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         captureSession.sessionPreset = AVCaptureSessionPresetPhoto
         frontCameraFunc(frontCamera)
+        viewOfScreen.bringSubview(toFront: takePictureButton)
+        viewOfScreen.bringSubview(toFront: flashButton)
+        viewOfScreen.bringSubview(toFront: flipCameraButton)
+
         if captureDevice != nil {
             beginSession()
         }
@@ -82,16 +96,38 @@ class CameraViewController: UIViewController {
     }
     
     @IBAction func takePicture(_ sender: Any) {
-        
+        if let videoConnection = stillImageOutput.connection(withMediaType: AVMediaTypeVideo) {
+            stillImageOutput.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (imageDataSampleBuffer, error) in
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataSampleBuffer)
+                let image = UIImage(data: imageData!)
+                print("Image taken: \(image)")
+                self.cameraView.backgroundColor = UIColor(patternImage: image!)
+                let imageView = UIImageView(image: image)
+                imageView.frame = self.cameraView.frame
+                self.cameraView.addSubview(imageView)
+            })
+        }
     }
     
     
+    
     @IBAction func activateFlash(_ sender: Any) {
-        
+        if captureDevice!.hasTorch {
+            do {
+                try captureDevice!.lockForConfiguration()
+                captureDevice!.torchMode = captureDevice!.isTorchActive ? AVCaptureTorchMode.off : AVCaptureTorchMode.on
+                captureDevice!.unlockForConfiguration()
+            } catch {
+                
+            }
+        }
     }
     
     
 
+    @IBAction func takeAnotherButtonClicked(_ sender: Any) {
+        viewDidLoad()
+    }
     
     
     

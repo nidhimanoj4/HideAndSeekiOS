@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -73,6 +73,17 @@
                                             <segue destination="ncF-Ui-xHZ" kind="show" id="xi8-FD-eYT"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39g-KS-iwA">
+                                        <rect key="frame" x="23" y="105" width="271" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.42840814522019849" green="0.23301980840625142" blue="0.51720369170984459" alpha="0.52797645246478875" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Tell Nidhi before deleteing this button :)">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ZAa-p2-vSJ" kind="presentation" id="naw-Gb-4Mh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -90,7 +101,7 @@
         <!--Hider View Controller-->
         <scene sceneID="Ez6-iB-aae">
             <objects>
-                <viewController id="iLB-if-egd" customClass="HiderViewController" sceneMemberID="viewController">
+                <viewController id="iLB-if-egd" customClass="HiderViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nzp-8n-Fr4"/>
                         <viewControllerLayoutGuide type="bottom" id="wl8-HB-ytp"/>
@@ -104,28 +115,37 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IC3-5c-IGq">
-                                <rect key="frame" x="16" y="554" width="343" height="93"/>
+                                <rect key="frame" x="0.0" y="570" width="375" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.95128319300518138" green="0.95128319300518138" blue="0.95128319300518138" alpha="0.4624779929577465" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
                                 <state key="normal" title="I Got Caught!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-on-s2a">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                                <rect key="frame" x="0.0" y="119" width="375" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO5-PU-dWd">
-                                <rect key="frame" x="16" y="287" width="343" height="93"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-sz-Uyx">
+                                <rect key="frame" x="0.0" y="0.0" width="194" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="0.25" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.32969614892806909" green="0.18937981503887663" blue="0.51720369170984459" alpha="0.2421875" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
                                 <state key="normal" title="Give Hint">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AN-bcr">
+                                <rect key="frame" x="192" y="0.0" width="183" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33664565850483102" green="0.19917058106996344" blue="0.51720369170984459" alpha="0.52797645246478875" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                         </subviews>
@@ -135,12 +155,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HE-DI-kUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712.8000000000002" y="-270.31484257871068"/>
+            <point key="canvasLocation" x="2686" y="-122"/>
         </scene>
-        <!--Join New Game View Controller-->
+        <!--Camera View Controller-->
+        <scene sceneID="w5U-7X-75o">
+            <objects>
+                <viewController id="ZAa-p2-vSJ" customClass="CameraViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c18-P7-0f5"/>
+                        <viewControllerLayoutGuide type="bottom" id="WDc-qK-H0f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EaN-J6-kZS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9V-Id-6wI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-zc-zFG">
+                                <rect key="frame" x="241" y="610" width="125" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42840814519999998" green="0.2330198084" blue="0.51720369170000002" alpha="0.52797645250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Capture">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePicture:" destination="ZAa-p2-vSJ" eventType="touchUpInside" id="Ec4-YC-xvV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu4-Cj-PmH">
+                                <rect key="frame" x="142" y="612" width="91" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42840814519999998" green="0.2330198084" blue="0.51720369170000002" alpha="0.52797645250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateFlash:" destination="ZAa-p2-vSJ" eventType="touchUpInside" id="8X3-Q0-Nxj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blq-1X-JBm">
+                                <rect key="frame" x="7" y="610" width="127" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.42840814519999998" green="0.2330198084" blue="0.51720369170000002" alpha="0.52797645250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flip Camera">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="flipCameraButtonClicked:" destination="ZAa-p2-vSJ" eventType="touchUpInside" id="A1J-Un-8L0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="M9V-Id-6wI" id="ls0-V1-Qc9"/>
+                        <outlet property="flashButton" destination="Mu4-Cj-PmH" id="xxV-XC-vHu"/>
+                        <outlet property="flipCameraButton" destination="blq-1X-JBm" id="Nfc-Ze-ER1"/>
+                        <outlet property="takePictureButton" destination="NAN-zc-zFG" id="YTb-W7-4bp"/>
+                        <outlet property="viewOfScreen" destination="EaN-J6-kZS" id="2JD-8x-TwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OAZ-M7-2m4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3509.5999999999999" y="-123.68815592203899"/>
+        </scene>
+        <!--Join Game View Controller-->
         <scene sceneID="bwz-Xh-v41">
             <objects>
-                <viewController id="ncF-Ui-xHZ" customClass="JoinNewGameViewController" sceneMemberID="viewController">
+                <viewController id="ncF-Ui-xHZ" customClass="JoinGameViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Oq-mM-zbr"/>
                         <viewControllerLayoutGuide type="bottom" id="bLF-Wg-QQf"/>
@@ -162,6 +247,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.98458701999999998" green="0.95726204380000002" blue="0.98899705500000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="joinGameButtonClicked:" destination="ncF-Ui-xHZ" eventType="touchUpInside" id="f77-gP-VxN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dcv-I5-9tJ">
                                 <rect key="frame" x="82" y="154" width="232" height="30"/>
@@ -183,15 +271,18 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enteredCodeTextField" destination="Dcv-I5-9tJ" id="vW5-ga-G9W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqA-tk-Tho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1880.8" y="565.36731634182911"/>
+            <point key="canvasLocation" x="1836" y="546"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="n5K-1I-m96">
             <objects>
-                <viewController id="XO8-4i-H3F" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
                         <viewControllerLayoutGuide type="bottom" id="9E8-Ca-HEr"/>
@@ -231,6 +322,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UBi-Sv-XdQ">
+                                        <rect key="frame" x="0.0" y="28" width="344" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBi-Sv-XdQ" id="0SS-Jm-be1">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-UB-2j1">
                                 <rect key="frame" x="16" y="587" width="344" height="60"/>
@@ -263,12 +364,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.8000000000002" y="59.820089955022496"/>
+            <point key="canvasLocation" x="1836" y="-121"/>
         </scene>
         <!--Seeker View Controller-->
         <scene sceneID="gKY-Hv-Gb0">
             <objects>
-                <viewController id="MxM-Ej-uXc" customClass="SeekerViewController" sceneMemberID="viewController">
+                <viewController id="MxM-Ej-uXc" customClass="SeekerViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAg-63-nyp"/>
                         <viewControllerLayoutGuide type="bottom" id="LOX-fP-Sn8"/>
@@ -300,7 +401,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSS-KC-H6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3724" y="500.59970014992507"/>
+            <point key="canvasLocation" x="2665" y="546"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">

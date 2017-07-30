@@ -10,9 +10,9 @@
 		030C5A441F2DCDBD000266B3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030C5A421F2DCDBD000266B3 /* FBSDKCoreKit.framework */; };
 		030C5A451F2DCDBD000266B3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030C5A431F2DCDBD000266B3 /* FBSDKLoginKit.framework */; };
 		030E06561F2DE30C00B245A0 /* HiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E06551F2DE30C00B245A0 /* HiderViewController.swift */; };
+		03BF69871F2DF3E200093421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF69861F2DF3E200093421 /* Main.storyboard */; };
 		03C36F091F2D2E8A00610A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F081F2D2E8A00610A7D /* AppDelegate.swift */; };
 		03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F0A1F2D2E8A00610A7D /* ViewController.swift */; };
-		03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0C1F2D2E8A00610A7D /* Main.storyboard */; };
 		03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */; };
 		03C36F1E1F2D2E8A00610A7D /* Hide_And_SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F1D1F2D2E8A00610A7D /* Hide_And_SeekTests.swift */; };
 		03C36F291F2D2E8A00610A7D /* Hide_And_SeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */; };
@@ -48,10 +48,10 @@
 		030C5A421F2DCDBD000266B3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
 		030C5A431F2DCDBD000266B3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		030E06551F2DE30C00B245A0 /* HiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiderViewController.swift; sourceTree = "<group>"; };
+		03BF69861F2DF3E200093421 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		03C36F051F2D2E8A00610A7D /* Hide-And-Seek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hide-And-Seek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C36F081F2D2E8A00610A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C36F0A1F2D2E8A00610A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03C36F0D1F2D2E8A00610A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03C36F141F2D2E8A00610A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C36F191F2D2E8A00610A7D /* Hide-And-SeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hide-And-SeekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +141,7 @@
 				030E06551F2DE30C00B245A0 /* HiderViewController.swift */,
 				52CA552E1F2D553300348EA6 /* SeekerViewController.swift */,
 				52CA55321F2D556200348EA6 /* CameraViewController.swift */,
-				03C36F0C1F2D2E8A00610A7D /* Main.storyboard */,
+				03BF69861F2DF3E200093421 /* Main.storyboard */,
 				03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */,
 				03C36F141F2D2E8A00610A7D /* Info.plist */,
 			);
@@ -311,7 +311,7 @@
 			files = (
 				1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */,
 				03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */,
-				03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */,
+				03BF69871F2DF3E200093421 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,17 +515,6 @@
 			targetProxy = 03C36F251F2D2E8A00610A7D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		03C36F0C1F2D2E8A00610A7D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03C36F0D1F2D2E8A00610A7D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		03C36F2B1F2D2E8A00610A7D /* Debug */ = {
