@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Screen View Controller-->
+        <!--Home-->
         <scene sceneID="T4b-n7-tsn">
             <objects>
                 <viewController storyboardIdentifier="HomeScreen" id="VFZ-7M-Nag" customClass="HomeScreenViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hide N' Seek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-9o-YDr">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="106"/>
+                                        <rect key="frame" x="0.0" y="67" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -52,15 +52,6 @@
                                         <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </label>
-                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16X-dE-bSx">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <items>
-                                            <navigationItem title="Home" id="Kns-I8-DXk">
-                                                <barButtonItem key="backBarButtonItem" title="Back" id="WQI-eZ-2RU"/>
-                                            </navigationItem>
-                                        </items>
-                                    </navigationBar>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfu-A4-g9D">
                                         <rect key="frame" x="43" y="435" width="289" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,7 +65,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39g-KS-iwA">
-                                        <rect key="frame" x="23" y="105" width="271" height="30"/>
+                                        <rect key="frame" x="0.0" y="191" width="271" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.42840814522019849" green="0.23301980840625142" blue="0.51720369170984459" alpha="0.52797645246478875" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Tell Nidhi before deleteing this button :)">
@@ -90,15 +81,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="nXv-Xd-qPN"/>
                     <connections>
                         <outlet property="startNewGameButton" destination="aLp-0Q-Cw4" id="3CA-Zu-gWC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkd-dz-WFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1048.8" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1988" y="37.331334332833585"/>
         </scene>
-        <!--Hider View Controller-->
+        <!--Hide-->
         <scene sceneID="Ez6-iB-aae">
             <objects>
                 <viewController id="iLB-if-egd" customClass="HiderViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
@@ -124,14 +116,14 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-on-s2a">
-                                <rect key="frame" x="0.0" y="94" width="375" height="163"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-sz-Uyx">
-                                <rect key="frame" x="0.0" y="0.0" width="194" height="70"/>
+                                <rect key="frame" x="0.0" y="64" width="194" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.32969614892806909" green="0.18937981503887663" blue="0.51720369170984459" alpha="0.2421875" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
@@ -139,35 +131,39 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AN-bcr">
-                                <rect key="frame" x="192" y="0.0" width="183" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.33664565850483102" green="0.19917058106996344" blue="0.51720369170984459" alpha="0.52797645246478875" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Camera">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Left To Hide!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDX-R6-FsW">
-                                <rect key="frame" x="106" y="201" width="162" height="21"/>
+                                <rect key="frame" x="106" y="241" width="162" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <color key="textColor" red="0.92387820509999996" green="0.92387820509999996" blue="0.92387820509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AN-bcr">
+                                <rect key="frame" x="192" y="64" width="183" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.33664565850483102" green="0.19917058106996344" blue="0.51720369170984459" alpha="0.52797645246478875" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZAa-p2-vSJ" kind="show" id="3u5-bf-VZB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                     </view>
+                    <navigationItem key="navigationItem" title="Hide" id="9h8-ql-5LI"/>
                     <connections>
                         <outlet property="timeLabel" destination="0gJ-on-s2a" id="Lfa-5e-qqa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HE-DI-kUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2685.5999999999999" y="-122.78860569715144"/>
+            <point key="canvasLocation" x="4486" y="-124"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Camera-->
         <scene sceneID="w5U-7X-75o">
             <objects>
                 <viewController id="ZAa-p2-vSJ" customClass="CameraViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
@@ -182,19 +178,21 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M9V-Id-6wI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-zc-zFG">
+                                        <rect key="frame" x="242" y="612" width="125" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.42840814519999998" green="0.2330198084" blue="0.51720369170000002" alpha="0.52797645250000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Capture">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePicture:" destination="ZAa-p2-vSJ" eventType="touchUpInside" id="Ec4-YC-xvV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAN-zc-zFG">
-                                <rect key="frame" x="241" y="610" width="125" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.42840814519999998" green="0.2330198084" blue="0.51720369170000002" alpha="0.52797645250000003" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Capture">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePicture:" destination="ZAa-p2-vSJ" eventType="touchUpInside" id="Ec4-YC-xvV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu4-Cj-PmH">
                                 <rect key="frame" x="142" y="612" width="91" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -220,6 +218,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Camera" id="nOR-Qx-qiw">
+                        <barButtonItem key="backBarButtonItem" title="Hide" id="rUo-QB-Ml4"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="hjQ-nI-Kpm"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="cameraView" destination="M9V-Id-6wI" id="ls0-V1-Qc9"/>
                         <outlet property="flashButton" destination="Mu4-Cj-PmH" id="xxV-XC-vHu"/>
@@ -230,9 +232,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OAZ-M7-2m4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3509.5999999999999" y="-123.68815592203899"/>
+            <point key="canvasLocation" x="5388" y="-123.68815592203899"/>
         </scene>
-        <!--Join Game View Controller-->
+        <!--Join-->
         <scene sceneID="bwz-Xh-v41">
             <objects>
                 <viewController id="ncF-Ui-xHZ" customClass="JoinGameViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
@@ -248,8 +250,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dcv-I5-9tJ">
+                                <rect key="frame" x="71" y="158" width="232" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1p-cu-wpG">
-                                <rect key="frame" x="93" y="454" width="210" height="70"/>
+                                <rect key="frame" x="82" y="450" width="210" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
@@ -261,37 +271,25 @@
                                     <action selector="joinGameButtonClicked:" destination="ncF-Ui-xHZ" eventType="touchUpInside" id="f77-gP-VxN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dcv-I5-9tJ">
-                                <rect key="frame" x="82" y="154" width="232" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A7d-mn-SQk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Join Game" id="lH6-94-WmY">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="dWp-ch-AfG"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Join" id="PFY-dA-Dtc">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="z3U-3X-Bc3"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="XAE-7h-70u"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="enteredCodeTextField" destination="Dcv-I5-9tJ" id="vW5-ga-G9W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqA-tk-Tho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="546"/>
+            <point key="canvasLocation" x="2775.1999999999998" y="545.57721139430294"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Start-->
         <scene sceneID="n5K-1I-m96">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
@@ -306,7 +304,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[GENERATED CODE]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqK-Jz-caB">
-                                <rect key="frame" x="16" y="95" width="343" height="66"/>
+                                <rect key="frame" x="16" y="135" width="343" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
@@ -314,16 +312,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Share this code with players!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtI-Yl-3vJ">
-                                <rect key="frame" x="16" y="169" width="344" height="24"/>
+                                <rect key="frame" x="15" y="209" width="344" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
-                                <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-UO-3Na">
-                                <rect key="frame" x="0.0" y="220" width="375" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
                                 <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -352,17 +343,15 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euC-KQ-CjD">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Start Game" id="YaK-Je-nub">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="y1d-OH-hEa"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPq-HT-CMt">
-                                <rect key="frame" x="0.0" y="44" width="375" height="59"/>
+                                <rect key="frame" x="1" y="72" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
+                                <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-UO-3Na">
+                                <rect key="frame" x="1" y="259" width="375" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
                                 <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -371,10 +360,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Start" id="BQe-ZC-97j">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="xSS-0J-rMo"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="5RW-Bz-dVz"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-121"/>
+            <point key="canvasLocation" x="2775.1999999999998" y="-121.88905547226388"/>
         </scene>
         <!--Seeker View Controller-->
         <scene sceneID="gKY-Hv-Gb0">
@@ -447,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSS-KC-H6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664.8000000000002" y="545.57721139430294"/>
+            <point key="canvasLocation" x="3604" y="545.57721139430294"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -485,6 +477,42 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3y3-jD-uFn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8W-Q9-NVC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Doa-LA-Xh2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VFZ-7M-Nag" kind="relationship" relationship="rootViewController" id="UYn-Ib-x4A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9O-ex-dem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mvx-I3-m05">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZJV-AY-llk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7R-LM-jwq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iLB-if-egd" kind="relationship" relationship="rootViewController" id="2Id-VV-3Hi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dj-Tj-iXo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3624.8000000000002" y="-122.78860569715144"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Chicago" width="736" height="1309"/>
@@ -494,4 +522,7 @@
         <image name="NYC" width="236" height="436"/>
         <image name="SF" width="640" height="1136"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="naw-Gb-4Mh"/>
+    </inferredMetricsTieBreakers>
 </document>
