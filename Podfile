@@ -28,5 +28,5 @@ target 'Hide-And-Seek' do
   pod 'FBSDKLoginKit'
 
   # Pods for Timer
-  pod 'CountdownLabel'
+  pod 'CountdownLabel', '~> 2.0'
 end
