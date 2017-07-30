@@ -220,7 +220,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Camera" id="nOR-Qx-qiw">
                         <barButtonItem key="backBarButtonItem" title="Hide" id="rUo-QB-Ml4"/>
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="hjQ-nI-Kpm"/>
                     </navigationItem>
                     <connections>
                         <outlet property="cameraView" destination="M9V-Id-6wI" id="ls0-V1-Qc9"/>
@@ -276,7 +275,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Join" id="PFY-dA-Dtc">
                         <barButtonItem key="backBarButtonItem" title="Home" id="z3U-3X-Bc3"/>
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="XAE-7h-70u"/>
                     </navigationItem>
                     <connections>
                         <outlet property="enteredCodeTextField" destination="Dcv-I5-9tJ" id="vW5-ga-G9W"/>
@@ -289,7 +287,6 @@
         <!--Start-->
         <scene sceneID="n5K-1I-m96">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
@@ -362,9 +359,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Start" id="BQe-ZC-97j">
                         <barButtonItem key="backBarButtonItem" title="Home" id="xSS-0J-rMo"/>
-                        <barButtonItem key="leftBarButtonItem" title="Home" id="5RW-Bz-dVz"/>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2775.1999999999998" y="-121.88905547226388"/>
         </scene>
