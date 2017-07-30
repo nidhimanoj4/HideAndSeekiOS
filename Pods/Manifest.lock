@@ -5,6 +5,7 @@ PODS:
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
+  - CountdownLabel (2.0.1)
   - FBSDKCoreKit (4.25.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.25.0):
@@ -52,6 +53,7 @@ PODS:
 
 DEPENDENCIES:
   - Bolts
+  - CountdownLabel (~> 2.0)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - Firebase/Auth
@@ -60,6 +62,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CountdownLabel: 1297533b42ef5c1a441cd458136c35ad93210da1
   FBSDKCoreKit: 53e3f4bfb64e80c5f229dd30ae33ff57fbbbd2d1
   FBSDKLoginKit: f628c09684dae9c17f071cf90b014e886f5093ea
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
@@ -72,6 +75,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 291607f3adf0c5f47ad1ff61649773d44b5dfdb4
+PODFILE CHECKSUM: 17ab2f22d024df04dcb7f8a8f95005960242adc7
 
 COCOAPODS: 1.2.1

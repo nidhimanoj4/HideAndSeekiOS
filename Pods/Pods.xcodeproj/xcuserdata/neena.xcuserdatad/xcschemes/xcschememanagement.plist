@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CountdownLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44CAD6CE523055ED339E87154473A254</key>
+		<key>3E428C68B90D9179274C43B2C39ED33B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5625A2E041939921B6FAD3DFE8EBEE0E</key>
+		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>7B4D1F4A577B4645ACCDB66EEE65E0D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F254C70EA7289F49F560FEF44F5E03E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

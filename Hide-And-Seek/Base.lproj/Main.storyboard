@@ -177,7 +177,7 @@
         <!--Game View Controller-->
         <scene sceneID="n5K-1I-m96">
             <objects>
-                <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
                         <viewControllerLayoutGuide type="bottom" id="9E8-Ca-HEr"/>
@@ -386,7 +386,7 @@
         <image name="HongKong" width="640" height="1136"/>
         <image name="LA" width="640" height="1136"/>
         <image name="London" width="640" height="1136"/>
-        <image name="NYC" width="640" height="1136"/>
+        <image name="NYC" width="236" height="436"/>
         <image name="SF" width="640" height="1136"/>
     </resources>
 </document>

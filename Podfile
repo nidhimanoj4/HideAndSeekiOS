@@ -17,7 +17,7 @@ target 'Hide-And-Seek' do
     # Pods for testing
   end
 
-  #Pods for Firebase
+  # Pods for Firebase
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
@@ -26,4 +26,7 @@ target 'Hide-And-Seek' do
   pod 'Bolts'
   pod 'FBSDKCoreKit'
   pod 'FBSDKLoginKit'
+
+  # Pods for Timer
+  pod 'CountdownLabel', '~> 2.0'
 end

@@ -24,6 +24,7 @@ class JoinGameViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         if let currentUser = Auth.auth().currentUser {
             // Initialize the user in firebase with location
+            self.ref.removeAllObservers()
             self.ref.child("users").child(currentUser.uid).setValue(["name":currentUser.displayName])
             determineMyCurrentLocation()
             let userRef = self.ref.child("users/\(currentUser.uid)")

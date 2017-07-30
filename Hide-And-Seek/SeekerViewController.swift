@@ -5,7 +5,6 @@
 //  Created by Makena Low on 7/29/17.
 //  Copyright © 2017 Nidhi Manoj. All rights reserved.
 //
-
 import Foundation
 import UIKit
 import Firebase
@@ -23,13 +22,22 @@ class SeekerViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let convFactor = 3280.4 as Float
     var locationManager:CLLocationManager!
 
+    @IBOutlet weak var timeLabel: UILabel!
+
+    let formatter = DateFormatter()
+    let userCalendar = Calendar.current;
+    let requestedComponent : Set<Calendar.Component> = [
+    Calendar.Component.hour,
+    Calendar.Component.minute,
+    Calendar.Component.second
+    ]
+
 
     @IBOutlet weak var playerList: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
         playerList.dataSource = self
         playerList.delegate = self
         if let currentUser = Auth.auth().currentUser {
@@ -59,6 +67,8 @@ class SeekerViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             determineMyCurrentLocation()
         }
+        let timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timePrinter), userInfo: nil, repeats: true)
+        timer.fire()
     }
     
     override func didReceiveMemoryWarning() {
@@ -114,4 +124,17 @@ class SeekerViewController: UIViewController, UITableViewDelegate, UITableViewDa
         print("Error \(error)")
     }
 
+    func timeCalculator(dateFormat: String, endTime: String, startTime: Date = Date()) -> DateComponents {
+        formatter.dateFormat = dateFormat
+        let _startTime = startTime
+        let _endTime = formatter.date(from: endTime)
+        
+        let timeDifference = userCalendar.dateComponents(requestedComponent, from: _startTime, to: _endTime!)
+        return timeDifference
+    }
+    
+    func timePrinter() -> Void {
+        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "07/31/2017 11:30:00 a")
+        //timeLabel.text = "\(time.minute!) Minutes \(time.second!) Seconds" // FIX ME
+    }
 }
