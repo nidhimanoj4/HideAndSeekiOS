@@ -42,12 +42,16 @@ class JoinGameViewController: UIViewController, CLLocationManagerDelegate {
         if let currentUser = Auth.auth().currentUser {
             let enteredGameCode = enteredCodeTextField.text ?? ""
             self.ref.child("games/\(enteredGameCode)/players").childByAutoId().setValue(currentUser.uid)
-            
-            
-            let storyboard = UIStoryboard(name: "MainStoryboard", bundle: nil)
-            let controller = storyboard.instantiateViewController(withIdentifier: "GameViewController")
-            self.present(controller, animated: true, completion: nil)
-            
+            self.ref.child("users/\(currentUser.uid)/current_game").setValue(enteredGameCode)
+            self.ref.child("games/\(enteredGameCode)/status").observe(.value, with: { snapshot in
+                print((snapshot.value as? String ?? ""))
+                if ((snapshot.value as? String ?? "") == "active"){
+                    self.ref.removeAllObservers()
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let controller = storyboard.instantiateViewController(withIdentifier: "HiderViewController")
+                    self.present(controller, animated: true, completion: nil)
+                }
+            })
             // Initialize the tableView and the code at the top
             
             
@@ -69,8 +73,8 @@ class JoinGameViewController: UIViewController, CLLocationManagerDelegate {
         // Calling stopUpdatingLocation() will stop listening for location updates.
         // Do not call this function because we want the function to be called every time when user location changes.
         // manager.stopUpdatingLocation()
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
+//        print("user latitude = \(userLocation.coordinate.latitude)")
+//        print("user longitude = \(userLocation.coordinate.longitude)")
         if let currentUser = Auth.auth().currentUser {
             // Set the current user's location in Firebase
             self.ref.child("users/\(currentUser.uid)/latitude").setValue(userLocation.coordinate.latitude)

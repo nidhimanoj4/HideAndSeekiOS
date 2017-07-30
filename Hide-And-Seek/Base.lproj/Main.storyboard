@@ -81,7 +81,7 @@
         <!--Hider View Controller-->
         <scene sceneID="Ez6-iB-aae">
             <objects>
-                <viewController id="iLB-if-egd" customClass="HiderViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HiderViewController" id="iLB-if-egd" customClass="HiderViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nzp-8n-Fr4"/>
                         <viewControllerLayoutGuide type="bottom" id="wl8-HB-ytp"/>
@@ -239,6 +239,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IN-hR-TML">
+                                <rect key="frame" x="0.0" y="95" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
+                                <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-UB-2j1">
                                 <rect key="frame" x="16" y="587" width="344" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -248,16 +255,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iLB-if-egd" kind="show" id="2mo-a2-dEI"/>
+                                    <action selector="startGameButtonClicked:" destination="XO8-4i-H3F" eventType="touchUpInside" id="LsG-M6-mjK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IN-hR-TML">
-                                <rect key="frame" x="0.0" y="95" width="375" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="34"/>
-                                <color key="textColor" red="0.9955409019" green="0.96791192550000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
@@ -268,12 +268,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2768.8000000000002" y="59.820089955022496"/>
+            <point key="canvasLocation" x="2665" y="-136"/>
         </scene>
         <!--Seeker View Controller-->
         <scene sceneID="gKY-Hv-Gb0">
             <objects>
-                <viewController id="MxM-Ej-uXc" customClass="SeekerViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeekerViewController" id="MxM-Ej-uXc" customClass="SeekerViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mAg-63-nyp"/>
                         <viewControllerLayoutGuide type="bottom" id="LOX-fP-Sn8"/>

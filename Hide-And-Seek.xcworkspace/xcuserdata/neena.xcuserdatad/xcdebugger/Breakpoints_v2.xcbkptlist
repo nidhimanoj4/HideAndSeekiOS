@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hide-And-Seek/JoinGameViewController.swift"
+            timestampString = "523093367.279104"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "joinGameButtonClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hide_And_Seek.JoinGameViewController.(joinGameButtonClicked (__ObjC.UIButton) -&gt; ()).(closure #1)"
+                  moduleName = "Hide-And-Seek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neena/Projects/ios/HideAndSeekiOS/Hide-And-Seek/JoinGameViewController.swift"
+                  timestampString = "523093026.368532"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "37">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Hide_And_Seek.JoinGameViewController.(joinGameButtonClicked (__ObjC.UIButton) -&gt; ()).(closure #1).(implicit closure #1)"
+                  moduleName = "Hide-And-Seek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neena/Projects/ios/HideAndSeekiOS/Hide-And-Seek/JoinGameViewController.swift"
+                  timestampString = "523093026.372008"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
