@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="3712.8000000000002" y="-270.31484257871068"/>
         </scene>
-        <!--Join New Game View Controller-->
+        <!--Join Game View Controller-->
         <scene sceneID="bwz-Xh-v41">
             <objects>
-                <viewController id="ncF-Ui-xHZ" customClass="JoinNewGameViewController" sceneMemberID="viewController">
+                <viewController id="ncF-Ui-xHZ" customClass="JoinGameViewController" customModule="Hide_And_Seek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Oq-mM-zbr"/>
                         <viewControllerLayoutGuide type="bottom" id="bLF-Wg-QQf"/>
@@ -151,6 +151,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.98458701999999998" green="0.95726204380000002" blue="0.98899705500000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="joinGameButtonClicked:" destination="ncF-Ui-xHZ" eventType="touchUpInside" id="f77-gP-VxN"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dcv-I5-9tJ">
                                 <rect key="frame" x="82" y="154" width="232" height="30"/>
@@ -163,6 +166,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enteredCodeTextField" destination="Dcv-I5-9tJ" id="vW5-ga-G9W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PqA-tk-Tho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -171,7 +177,7 @@
         <!--Game View Controller-->
         <scene sceneID="n5K-1I-m96">
             <objects>
-                <viewController id="XO8-4i-H3F" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="XO8-4i-H3F" customClass="GameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
                         <viewControllerLayoutGuide type="bottom" id="9E8-Ca-HEr"/>
@@ -218,6 +224,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="UBi-Sv-XdQ">
+                                        <rect key="frame" x="0.0" y="28" width="344" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UBi-Sv-XdQ" id="0SS-Jm-be1">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-UB-2j1">
                                 <rect key="frame" x="16" y="587" width="344" height="60"/>
