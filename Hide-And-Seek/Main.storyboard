@@ -42,7 +42,7 @@
                                             <segue destination="XO8-4i-H3F" kind="show" id="ZGu-1l-lgU"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hide N' Seek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-9o-YDr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hide N' Snap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCJ-9o-YDr">
                                         <rect key="frame" x="0.0" y="67" width="375" height="106"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -621,6 +621,6 @@
         <image name="street" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3u5-bf-VZB"/>
+        <segue reference="naw-Gb-4Mh"/>
     </inferredMetricsTieBreakers>
 </document>
