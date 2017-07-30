@@ -19,6 +19,7 @@
 		1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */; };
 		2502BCA9CF59D3D2C291D4E4 /* Pods_Hide_And_SeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */; };
 		34878E7140C53CBAF7A7A4A1 /* Pods_Hide_And_Seek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */; };
+		44750BA71F2E1A50007E7A84 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */; };
 		52CA55291F2D4FA300348EA6 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA55281F2D4FA300348EA6 /* HomeScreenViewController.swift */; };
 		52CA552B1F2D541500348EA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA552A1F2D541500348EA6 /* GameViewController.swift */; };
 		52CA552D1F2D551400348EA6 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA552C1F2D551400348EA6 /* JoinGameViewController.swift */; };
@@ -63,6 +64,7 @@
 		0B5ABD42AC851D82BD98466A /* Pods-Hide-And-SeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekTests/Pods-Hide-And-SeekTests.release.xcconfig"; sourceTree = "<group>"; };
 		1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		52CA55281F2D4FA300348EA6 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		52CA552A1F2D541500348EA6 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		52CA552C1F2D551400348EA6 /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				52CA552E1F2D553300348EA6 /* SeekerViewController.swift */,
 				52CA55321F2D556200348EA6 /* CameraViewController.swift */,
 				03BF69861F2DF3E200093421 /* Main.storyboard */,
+				44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */,
 				03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */,
 				03C36F141F2D2E8A00610A7D /* Info.plist */,
 			);
@@ -482,6 +485,7 @@
 				03C36F091F2D2E8A00610A7D /* AppDelegate.swift in Sources */,
 				52CA55331F2D556200348EA6 /* CameraViewController.swift in Sources */,
 				030E06561F2DE30C00B245A0 /* HiderViewController.swift in Sources */,
+				44750BA71F2E1A50007E7A84 /* GameOverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
