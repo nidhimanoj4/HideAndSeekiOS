@@ -171,7 +171,7 @@
         <!--Game View Controller-->
         <scene sceneID="n5K-1I-m96">
             <objects>
-                <viewController id="XO8-4i-H3F" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameView" id="XO8-4i-H3F" customClass="GameViewController" customModule="Hide_And_Seek" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HIh-m1-Rix"/>
                         <viewControllerLayoutGuide type="bottom" id="9E8-Ca-HEr"/>
@@ -218,6 +218,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.Greylock-Hide-And-Seek.playerCell" id="ZoR-Z4-r0S" customClass="PlayerListTableViewCell" customModule="Hide_And_Seek" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="344" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZoR-Z4-r0S" id="DtV-fE-vT3">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Isb-uU-7NM">
+                                                    <rect key="frame" x="23" y="11" width="202" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playerNameLabel" destination="Isb-uU-7NM" id="8Eh-9S-WCa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCj-UB-2j1">
                                 <rect key="frame" x="16" y="587" width="344" height="60"/>
@@ -227,10 +249,17 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="iLB-if-egd" kind="show" id="2mo-a2-dEI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="codeLabel" destination="fqK-Jz-caB" id="Xed-i4-I8e"/>
+                        <outlet property="playerList" destination="fFX-5y-M3D" id="4bl-4N-Npi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LVe-J5-lgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
