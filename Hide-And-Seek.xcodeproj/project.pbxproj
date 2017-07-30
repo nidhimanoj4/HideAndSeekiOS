@@ -13,6 +13,7 @@
 		03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */; };
 		03C36F1E1F2D2E8A00610A7D /* Hide_And_SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F1D1F2D2E8A00610A7D /* Hide_And_SeekTests.swift */; };
 		03C36F291F2D2E8A00610A7D /* Hide_And_SeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */; };
+		1B45EBF21F2E24FE00AE80C2 /* DistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */; };
 		1B49BF3D1F2D9AF400E4044D /* PlayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */; };
 		1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */; };
 		2502BCA9CF59D3D2C291D4E4 /* Pods_Hide_And_SeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */; };
@@ -56,6 +57,7 @@
 		03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hide_And_SeekUITests.swift; sourceTree = "<group>"; };
 		03C36F2A1F2D2E8A00610A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B5ABD42AC851D82BD98466A /* Pods-Hide-And-SeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekTests/Pods-Hide-And-SeekTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistTableViewCell.swift; sourceTree = "<group>"; };
 		1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListTableViewCell.swift; sourceTree = "<group>"; };
 		1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +137,7 @@
 				52CA552E1F2D553300348EA6 /* SeekerViewController.swift */,
 				52CA55321F2D556200348EA6 /* HiderViewController.swift */,
 				03C36F0C1F2D2E8A00610A7D /* Main.storyboard */,
+				1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */,
 				1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */,
 				03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */,
 				03C36F141F2D2E8A00610A7D /* Info.plist */,
@@ -465,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CA552D1F2D551400348EA6 /* JoinGameViewController.swift in Sources */,
+				1B45EBF21F2E24FE00AE80C2 /* DistTableViewCell.swift in Sources */,
 				52CA552B1F2D541500348EA6 /* GameViewController.swift in Sources */,
 				03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */,
 				52CA552F1F2D553300348EA6 /* SeekerViewController.swift in Sources */,
