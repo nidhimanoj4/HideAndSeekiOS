@@ -30,7 +30,7 @@ class GameViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             gameRef.setValue([]) //Clear any previous value
             gameRef.child("players").childByAutoId().setValue(currentUser.uid)
-            
+            self.ref.child("users/\(currentUser.uid)/current_game").setValue(gameID)
             self.codeLabel.text = gameID
             
             gameRef.child("players").observe(.childAdded, with: { snapshot in
