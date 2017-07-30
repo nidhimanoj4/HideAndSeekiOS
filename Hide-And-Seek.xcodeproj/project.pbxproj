@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030C5A441F2DCDBD000266B3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030C5A421F2DCDBD000266B3 /* FBSDKCoreKit.framework */; };
-		030C5A451F2DCDBD000266B3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030C5A431F2DCDBD000266B3 /* FBSDKLoginKit.framework */; };
-		030E06561F2DE30C00B245A0 /* HiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E06551F2DE30C00B245A0 /* HiderViewController.swift */; };
-		03BF69871F2DF3E200093421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03BF69861F2DF3E200093421 /* Main.storyboard */; };
 		03C36F091F2D2E8A00610A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F081F2D2E8A00610A7D /* AppDelegate.swift */; };
 		03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F0A1F2D2E8A00610A7D /* ViewController.swift */; };
+		03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0C1F2D2E8A00610A7D /* Main.storyboard */; };
 		03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */; };
 		03C36F1E1F2D2E8A00610A7D /* Hide_And_SeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F1D1F2D2E8A00610A7D /* Hide_And_SeekTests.swift */; };
 		03C36F291F2D2E8A00610A7D /* Hide_And_SeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */; };
+		1B45EBF21F2E24FE00AE80C2 /* DistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */; };
+		1B49BF3D1F2D9AF400E4044D /* PlayerListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */; };
 		1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */; };
 		2502BCA9CF59D3D2C291D4E4 /* Pods_Hide_And_SeekTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */; };
 		34878E7140C53CBAF7A7A4A1 /* Pods_Hide_And_Seek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */; };
-		44750BA71F2E1A50007E7A84 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */; };
 		52CA55291F2D4FA300348EA6 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA55281F2D4FA300348EA6 /* HomeScreenViewController.swift */; };
 		52CA552B1F2D541500348EA6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA552A1F2D541500348EA6 /* GameViewController.swift */; };
 		52CA552D1F2D551400348EA6 /* JoinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA552C1F2D551400348EA6 /* JoinGameViewController.swift */; };
 		52CA552F1F2D553300348EA6 /* SeekerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA552E1F2D553300348EA6 /* SeekerViewController.swift */; };
-		52CA55331F2D556200348EA6 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA55321F2D556200348EA6 /* CameraViewController.swift */; };
+		52CA55331F2D556200348EA6 /* HiderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA55321F2D556200348EA6 /* HiderViewController.swift */; };
 		89E40DCF45C34DD30FD4E555 /* Pods_Hide_And_SeekUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AF10BD53C2888697657D2C /* Pods_Hide_And_SeekUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,13 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		030C5A421F2DCDBD000266B3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
-		030C5A431F2DCDBD000266B3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Pods/../build/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
-		030E06551F2DE30C00B245A0 /* HiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiderViewController.swift; sourceTree = "<group>"; };
-		03BF69861F2DF3E200093421 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		03C36F051F2D2E8A00610A7D /* Hide-And-Seek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hide-And-Seek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C36F081F2D2E8A00610A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C36F0A1F2D2E8A00610A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03C36F0D1F2D2E8A00610A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03C36F141F2D2E8A00610A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C36F191F2D2E8A00610A7D /* Hide-And-SeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hide-And-SeekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,14 +57,15 @@
 		03C36F281F2D2E8A00610A7D /* Hide_And_SeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hide_And_SeekUITests.swift; sourceTree = "<group>"; };
 		03C36F2A1F2D2E8A00610A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B5ABD42AC851D82BD98466A /* Pods-Hide-And-SeekTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekTests/Pods-Hide-And-SeekTests.release.xcconfig"; sourceTree = "<group>"; };
+		1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistTableViewCell.swift; sourceTree = "<group>"; };
+		1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListTableViewCell.swift; sourceTree = "<group>"; };
 		1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_Seek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		52CA55281F2D4FA300348EA6 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		52CA552A1F2D541500348EA6 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		52CA552C1F2D551400348EA6 /* JoinGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinGameViewController.swift; sourceTree = "<group>"; };
 		52CA552E1F2D553300348EA6 /* SeekerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeekerViewController.swift; sourceTree = "<group>"; };
-		52CA55321F2D556200348EA6 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		52CA55321F2D556200348EA6 /* HiderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiderViewController.swift; sourceTree = "<group>"; };
 		67C16EFC1BBDFA43F758A849 /* Pods-Hide-And-SeekUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekUITests/Pods-Hide-And-SeekUITests.release.xcconfig"; sourceTree = "<group>"; };
 		74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hide_And_SeekTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D6E70F9135C1069B18330AB /* Pods-Hide-And-SeekTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hide-And-SeekTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hide-And-SeekTests/Pods-Hide-And-SeekTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -84,8 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030C5A441F2DCDBD000266B3 /* FBSDKCoreKit.framework in Frameworks */,
-				030C5A451F2DCDBD000266B3 /* FBSDKLoginKit.framework in Frameworks */,
 				34878E7140C53CBAF7A7A4A1 /* Pods_Hide_And_Seek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,11 +134,11 @@
 				52CA552A1F2D541500348EA6 /* GameViewController.swift */,
 				52CA552C1F2D551400348EA6 /* JoinGameViewController.swift */,
 				52CA55281F2D4FA300348EA6 /* HomeScreenViewController.swift */,
-				030E06551F2DE30C00B245A0 /* HiderViewController.swift */,
 				52CA552E1F2D553300348EA6 /* SeekerViewController.swift */,
-				52CA55321F2D556200348EA6 /* CameraViewController.swift */,
-				03BF69861F2DF3E200093421 /* Main.storyboard */,
-				44750BA61F2E1A50007E7A84 /* GameOverViewController.swift */,
+				52CA55321F2D556200348EA6 /* HiderViewController.swift */,
+				03C36F0C1F2D2E8A00610A7D /* Main.storyboard */,
+				1B45EBF11F2E24FE00AE80C2 /* DistTableViewCell.swift */,
+				1B49BF3C1F2D9AF400E4044D /* PlayerListTableViewCell.swift */,
 				03C36F0F1F2D2E8A00610A7D /* Assets.xcassets */,
 				03C36F141F2D2E8A00610A7D /* Info.plist */,
 			);
@@ -185,8 +179,6 @@
 		9F25FBC6F2E1B6326A2444B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				030C5A421F2DCDBD000266B3 /* FBSDKCoreKit.framework */,
-				030C5A431F2DCDBD000266B3 /* FBSDKLoginKit.framework */,
 				36BD8D13197ABA111473296A /* Pods_Hide_And_Seek.framework */,
 				74FE7987C38141E51B05EC41 /* Pods_Hide_And_SeekTests.framework */,
 				D0AF10BD53C2888697657D2C /* Pods_Hide_And_SeekUITests.framework */,
@@ -266,14 +258,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Nidhi Manoj";
 				TargetAttributes = {
 					03C36F041F2D2E8A00610A7D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 9JEDVMX3N7;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
 					};
 					03C36F181F2D2E8A00610A7D = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -314,7 +304,7 @@
 			files = (
 				1BF9966D1F2D424000E1558C /* GoogleService-Info.plist in Resources */,
 				03C36F101F2D2E8A00610A7D /* Assets.xcassets in Resources */,
-				03BF69871F2DF3E200093421 /* Main.storyboard in Resources */,
+				03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,14 +468,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CA552D1F2D551400348EA6 /* JoinGameViewController.swift in Sources */,
+				1B45EBF21F2E24FE00AE80C2 /* DistTableViewCell.swift in Sources */,
 				52CA552B1F2D541500348EA6 /* GameViewController.swift in Sources */,
 				03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */,
 				52CA552F1F2D553300348EA6 /* SeekerViewController.swift in Sources */,
+				1B49BF3D1F2D9AF400E4044D /* PlayerListTableViewCell.swift in Sources */,
 				52CA55291F2D4FA300348EA6 /* HomeScreenViewController.swift in Sources */,
 				03C36F091F2D2E8A00610A7D /* AppDelegate.swift in Sources */,
-				52CA55331F2D556200348EA6 /* CameraViewController.swift in Sources */,
-				030E06561F2DE30C00B245A0 /* HiderViewController.swift in Sources */,
-				44750BA71F2E1A50007E7A84 /* GameOverViewController.swift in Sources */,
+				52CA55331F2D556200348EA6 /* HiderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +510,17 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		03C36F0C1F2D2E8A00610A7D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C36F0D1F2D2E8A00610A7D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		03C36F2B1F2D2E8A00610A7D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -534,10 +535,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -581,10 +580,8 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -603,7 +600,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -614,19 +610,10 @@
 			baseConfigurationReference = 81907F2B5A23228E8C353CBE /* Pods-Hide-And-Seek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9JEDVMX3N7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
-				);
 				INFOPLIST_FILE = "Hide-And-Seek/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Greylock-Hide-And-Seek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -636,19 +623,10 @@
 			baseConfigurationReference = DCA288C30EAFB53E4C84C34D /* Pods-Hide-And-Seek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9JEDVMX3N7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKCoreKit",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/FBSDKLoginKit",
-				);
 				INFOPLIST_FILE = "Hide-And-Seek/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Greylock-Hide-And-Seek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

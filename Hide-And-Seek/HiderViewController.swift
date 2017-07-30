@@ -43,8 +43,8 @@ class HiderViewController: UIViewController {
     }
     
     func timePrinter() -> Void {
-        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "07/30/2017 04:30:00 a")
-        timeLabel.text = "\(time.minute!) Minutes \(time.second!) Seconds"
+        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "07/31/2017 10:30:00 a")
+        //timeLabel.text = "\(time.minute!) Minutes \(time.second!) Seconds"
     }
     
 }
