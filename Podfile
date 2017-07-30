@@ -20,6 +20,7 @@ target 'Hide-And-Seek' do
   #Pods for Firebase
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
   # Pods for Facebook
   pod 'Bolts'
