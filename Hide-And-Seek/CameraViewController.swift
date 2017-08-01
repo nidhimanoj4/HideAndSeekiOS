@@ -11,19 +11,19 @@ import UIKit
 import AVFoundation
 
 class CameraViewController: UIViewController {
-    //save photo to user's photos
+    //save photo to user's photos    
+    @IBOutlet var viewOfScreen: UIView!
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var takePictureButton: UIButton!
-    @IBOutlet weak var flashButton: UIButton!
     @IBOutlet weak var flipCameraButton: UIButton!
-    @IBOutlet var viewOfScreen: UIView!
+    @IBOutlet weak var flashButton: UIButton!
     let captureSession = AVCaptureSession()
     var captureDevice: AVCaptureDevice?
     var previewLayer: AVCaptureVideoPreviewLayer?
     var frontCamera: Bool = false
     var stillImageOutput: AVCaptureStillImageOutput = AVCaptureStillImageOutput()
-    
-    @IBAction func flipCameraButtonClicked(_ sender: UIButton) {
+   
+    @IBAction func flipCameraButtonClicked(_ sender: Any) {
         // Switch camera to frontal
         frontCamera = !frontCamera
         captureSession.beginConfiguration()
@@ -110,7 +110,6 @@ class CameraViewController: UIViewController {
     }
     
     
-    
     @IBAction func activateFlash(_ sender: Any) {
         if captureDevice!.hasTorch {
             do {
@@ -122,7 +121,7 @@ class CameraViewController: UIViewController {
             }
         }
     }
-    
+
     
 
     @IBAction func takeAnotherButtonClicked(_ sender: Any) {

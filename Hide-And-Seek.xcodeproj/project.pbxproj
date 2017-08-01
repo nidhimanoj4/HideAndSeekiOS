@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03BF698A1F2E4EC700093421 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF69881F2E4EC700093421 /* GameOverViewController.swift */; };
+		03BF698B1F2E4EC700093421 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF69891F2E4EC700093421 /* CameraViewController.swift */; };
 		03C36F091F2D2E8A00610A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F081F2D2E8A00610A7D /* AppDelegate.swift */; };
 		03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36F0A1F2D2E8A00610A7D /* ViewController.swift */; };
 		03C36F0E1F2D2E8A00610A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C36F0C1F2D2E8A00610A7D /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03BF69881F2E4EC700093421 /* GameOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		03BF69891F2E4EC700093421 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		03C36F051F2D2E8A00610A7D /* Hide-And-Seek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hide-And-Seek.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C36F081F2D2E8A00610A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03C36F0A1F2D2E8A00610A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		03C36F071F2D2E8A00610A7D /* Hide-And-Seek */ = {
 			isa = PBXGroup;
 			children = (
+				03BF69881F2E4EC700093421 /* GameOverViewController.swift */,
+				03BF69891F2E4EC700093421 /* CameraViewController.swift */,
 				1BF9966C1F2D424000E1558C /* GoogleService-Info.plist */,
 				03C36F081F2D2E8A00610A7D /* AppDelegate.swift */,
 				03C36F0A1F2D2E8A00610A7D /* ViewController.swift */,
@@ -263,7 +269,9 @@
 				TargetAttributes = {
 					03C36F041F2D2E8A00610A7D = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 9JEDVMX3N7;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
 					};
 					03C36F181F2D2E8A00610A7D = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -467,10 +475,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BF698B1F2E4EC700093421 /* CameraViewController.swift in Sources */,
 				52CA552D1F2D551400348EA6 /* JoinGameViewController.swift in Sources */,
 				1B45EBF21F2E24FE00AE80C2 /* DistTableViewCell.swift in Sources */,
 				52CA552B1F2D541500348EA6 /* GameViewController.swift in Sources */,
 				03C36F0B1F2D2E8A00610A7D /* ViewController.swift in Sources */,
+				03BF698A1F2E4EC700093421 /* GameOverViewController.swift in Sources */,
 				52CA552F1F2D553300348EA6 /* SeekerViewController.swift in Sources */,
 				1B49BF3D1F2D9AF400E4044D /* PlayerListTableViewCell.swift in Sources */,
 				52CA55291F2D4FA300348EA6 /* HomeScreenViewController.swift in Sources */,
@@ -539,6 +549,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -584,6 +595,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -610,10 +622,13 @@
 			baseConfigurationReference = 81907F2B5A23228E8C353CBE /* Pods-Hide-And-Seek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9JEDVMX3N7;
 				INFOPLIST_FILE = "Hide-And-Seek/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Greylock-Hide-And-Seek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -623,10 +638,13 @@
 			baseConfigurationReference = DCA288C30EAFB53E4C84C34D /* Pods-Hide-And-Seek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9JEDVMX3N7;
 				INFOPLIST_FILE = "Hide-And-Seek/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Greylock-Hide-And-Seek";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

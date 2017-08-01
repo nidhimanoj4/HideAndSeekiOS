@@ -50,7 +50,7 @@ class ViewController: UIViewController {
                 }
                 
                 // Present the main view
-                if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeScreen") { //TODO
+                if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "NavigationController") { //TODO
                     UIApplication.shared.keyWindow?.rootViewController = viewController
                     self.dismiss(animated: true, completion: nil)
                 }

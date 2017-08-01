@@ -134,7 +134,7 @@ class SeekerViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func timePrinter() -> Void {
-        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "07/31/2017 11:30:00 a")
-        //timeLabel.text = "\(time.minute!) Minutes \(time.second!) Seconds" // FIX ME
+        let time = timeCalculator(dateFormat: "MM/dd/yyyy hh:mm:ss a", endTime: "07/30/2017 12:00:00 p")
+        timeLabel.text = "\(time.minute!) Minutes \(time.second!) Seconds" // FIX ME
     }
 }
